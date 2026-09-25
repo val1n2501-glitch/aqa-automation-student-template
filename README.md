@@ -16,6 +16,14 @@ uv sync --locked
 
 Используется Python 3.13; uv при необходимости установит его. Файл `uv.lock` фиксирует зависимости для повторяемой установки.
 
+В шаблоне уже закреплены инструменты ближайших уроков: `pytest`, `requests` и Pydantic v2. Дополнительно устанавливать их через `pip` не нужно.
+
+Проверить окружение можно одной командой:
+
+```bash
+uv run --locked python -c "import pytest, requests, pydantic; print('API dependencies ready')"
+```
+
 ## Запуск приложения и теста
 
 Учебное приложение находится в отдельном репозитории [aqa-training-sut](https://github.com/val1n2501-glitch/aqa-training-sut). Откройте для него отдельный терминал и выполните:
